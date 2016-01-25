@@ -1,0 +1,42 @@
+@link-base-color: #5B83AD;
+@link-hover-color: #fff;
+@item-base-background-color: #eee;
+@item-hover-background-color: #0066FF;
+@item-menu-background-color: #ccc;
+
+#autocomplete {
+	width: 500px;
+	margin-top: 200px;
+}
+
+.autocomplete-input,
+.autocomplete-menu-item {
+	display: block;
+	width: 100%;
+	padding: 5px 10px;
+}	
+
+.autocomplete-menu-items {
+	list-style: none;
+	padding: 0;
+	background-color: @item-menu-background-color;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.autocomplete-menu-item {
+	cursor: pointer;
+	background-color: @item-base-background-color;
+	list-style: none;
+	
+	&:hover {
+		background-color: @item-hover-background-color;
+		a {
+			color: @link-hover-color;	
+		}
+	}
+
+	a {
+		text-decoration: none;
+	} 
+}
