@@ -111,19 +111,3 @@ class Autocomplete extends Component {
 }
 
 export default Autocomplete
-
-/*
-Предлагаю в качестве примера написать автокомплит а-ля typeahead.js с кастомизируемым содержанием строки списка со следующей семантикой:
-<Autocomplete
-	valueLink={this.linkState(‘auto’)} 
-	fetch={(search) => new Promise(resolve => setTimeout(() => resolve([{id: 1, name: ‘qwe’}, …]), 1000))}
-	itemRender={(item) => <AutocompleteItem item={item}/>}
-/>
-valueLink - это байндинг выбранного значения к стейту формы
-fetch - асинхронная функция, возвращающая массив с данными для выбора
-itemRender - функция, возвращающая компонент, отрисовывающий элемент списка выбора
-es6/7 (babel) или typescript на выбор
-язык для стилей less или sass
-сборка - webpack
-если появятся вопросы - задавайте
-*/
